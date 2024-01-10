@@ -3,7 +3,8 @@
 ;; Place your private configuration here! Remember, you do not need to run 'doom
 ;; sync' after modifying this file!
 (set-frame-parameter (selected-frame)'alpha '(100 . 100))
- (add-to-list 'default-frame-alist'(alpha . (100 . 100)))
+(add-to-list 'default-frame-alist'(alpha . (100 . 100)))
+(add-to-list 'default-frame-alist '(inhibit-double-buffering . t))
 (setq jit-lock-stealth-time 1.25)
 (setq jit-lock-stealth-nice 0.5) ;; Seconds between font locking.
 (setq jit-lock-chunk-size 4096)
@@ -20,17 +21,16 @@
 ;; (setq user-full-name "John Doe"
 ;;       user-mail-address "john@doe.com")
 ;;
-;;;; lsp
-(after! lsp-mode
-  (setq lsp-inlay-hint-enable t)
-  (setq  lsp-auto-guess-root nil)
-  )
-;; Languages - C/C++
-
-(setq c-default-style "k&r"
-      c-basic-offset 4
-      indent-tabs-mode nil)
-
+; ;;;; lsp
+; (after! lsp-mode
+;   (setq  lsp-auto-guess-root nil)
+;   )
+; ;; Languages - C/C++
+;
+; (setq c-default-style "k&r"
+;       c-basic-offset 4
+;       indent-tabs-mode nil)
+;
 
 ;;; native compilation
 (setq native-comp-async-jobs-number 5) ; use 5 cores when native compiling
@@ -102,7 +102,7 @@
 ;; There are two ways to load a theme. Both assume the theme is installed and
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function. This is the default:
-(setq doom-theme 'solarized-selenized-dark)
+(setq doom-theme 'doom-nord)
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
 (setq display-line-numbers-type 'relative)
