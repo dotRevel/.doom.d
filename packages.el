@@ -42,7 +42,8 @@
 
 ;; Use `:pin' to specify a particular commit to install.
 ;; (package! builtin-package :pin "1a2b3c4d5e")
-
+(package! eglot :pin "d14fa2e5c537d48a25ce8444fdf9474ff2a8f7c0")
+(package! doom-modeline :pin "cfc7bcf1494cb0634a1464dc40a4a1a1e337cb37")
 
 ;; Doom's packages are pinned to a specific commit and updated from release to
 ;; release. The `unpin!' macro allows you to unpin single packages...
