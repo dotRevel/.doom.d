@@ -16,20 +16,26 @@
   (add-hook 'evil-insert-state-exit-hook
     (lambda ()
       (setq jit-lock-defer-time 0)) nil t))
+
+ (setq native-comp-jit-compilation nil)
+(after! (doom-packages straight)
+  (setq straight--native-comp-available t))
+
+
 ;; Some functionality uses this to identify you, e.g. GPG configuration, email
 ;; clients, file templates and snippets. It is optional.
 ;; (setq user-full-name "John Doe"
 ;;       user-mail-address "john@doe.com")
 ;;
 ; ;;;; lsp
-; (after! lsp-mode
-;   (setq  lsp-auto-guess-root nil)
-;   )
+ (after! lsp-mode
+   (setq  lsp-auto-guess-root nil)
+   )
 ; ;; Languages - C/C++
 ;
-; (setq c-default-style "k&r"
-;       c-basic-offset 4
-;       indent-tabs-mode nil)
+ (setq c-default-style "k&r"
+       c-basic-offset 4
+       indent-tabs-mode nil)
 ;
 
 ;;; native compilation
@@ -91,7 +97,7 @@
 ;; See 'C-h v doom-font' for documentation and more examples of what they
 ;; accept. For example:
 ;;
-(setq doom-font (font-spec :family "Droid Sans Mono" :size 25 :weight 'Regular))
+(setq doom-font (font-spec :family "Courier New" :size 18 :weight 'Regular))
 ;;      doom-variable-pitch-font (font-spec :family "Fira Sans" :size 13))
 ;;
 ;; If you or Emacs can't find your font, use 'M-x describe-font' to look them
