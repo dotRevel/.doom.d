@@ -14,6 +14,6 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:family "Droid Sans Mono" :foundry "1ASC" :slant normal :weight regular :height 124 :width normal))))
+ '(default ((t (:family "Courier New" :foundry "nil" :slant normal :weight medium :height 181 :width normal))))
  '(ts-fold-replacement-face ((t (:foreground unspecified :box nil :inherit font-lock-comment-face :weight light)))))
 (put 'customize-variable 'disabled nil)

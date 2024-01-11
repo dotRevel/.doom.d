@@ -35,7 +35,7 @@
        ;;(emoji +unicode)  ; 🙂
        hl-todo           ; highlight TODO/FIXME/NOTE/DEPRECATED/HACK/REVIEW
        ;;hydra
-       indent-guides     ; highlighted indent columns
+       ;;indent-guides     ; highlighted indent columns
        ;;ligatures         ; ligatures and symbols to make your code pretty again
        ;;minimap           ; show a map of the code on the side
        modeline           ; snazzy, Atom-inspired modeline, plus API
@@ -62,7 +62,7 @@
        ;;multiple-cursors  ; editing in many places at once
        ;;objed             ; text object editing for the innocent
        ;;parinfer          ; turn lisp into python, sort of
-       ;;rotate-text       ; cycle region at point between text candidates
+       rotate-text       ; cycle region at point between text candidates
        snippets          ; my elves. They type so I don't have to
        word-wrap         ; soft wrapping with language-aware indent
 
@@ -70,12 +70,12 @@
        (dired +icons)             ; making dired pretty [functional]
        electric          ; smarter, keyword-based electric-indent
        (ibuffer +icons)         ; interactive buffer management
-       ;;undo              ; persistent, smarter undo for your inevitable mistakes
+       undo              ; persistent, smarter undo for your inevitable mistakes
        ;;vc                ; version-control and Emacs, sitting in a tree
 
        :term
-       eshell            ; the elisp shell that works everywhere
-       ;;shell             ; simple shell REPL for Emacs
+       ;;eshell            ; the elisp shell that works everywhere
+       shell             ; simple shell REPL for Emacs
        ;;term              ; basic terminal emulator for Emacs
        ;;vterm             ; the best terminal emulation in Emacs
 

@@ -28,15 +28,15 @@
 ;;       user-mail-address "john@doe.com")
 ;;
 ; ;;;; lsp
- (after! lsp-mode
-   (setq  lsp-auto-guess-root nil)
-   )
+ ;; (after! lsp-mode
+ ;;   (setq  lsp-auto-guess-root nil)
+ ;;  )
 ; ;; Languages - C/C++
 ;
- (setq c-default-style "k&r"
-       c-basic-offset 4
-       indent-tabs-mode nil)
-;
+;; (setq c-default-style "k&r"
+ ;;       c-basic-offset 4
+;;        indent-tabs-mode nil)
+;; ;
 
 ;;; native compilation
 (setq native-comp-async-jobs-number 5) ; use 5 cores when native compiling
@@ -97,7 +97,7 @@
 ;; See 'C-h v doom-font' for documentation and more examples of what they
 ;; accept. For example:
 ;;
-(setq doom-font (font-spec :family "Courier New" :size 18 :weight 'Regular))
+(setq doom-font (font-spec :family "Droid Sans Mono" :size 12 :weight 'Regular))
 ;;      doom-variable-pitch-font (font-spec :family "Fira Sans" :size 13))
 ;;
 ;; If you or Emacs can't find your font, use 'M-x describe-font' to look them
@@ -108,7 +108,7 @@
 ;; There are two ways to load a theme. Both assume the theme is installed and
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function. This is the default:
-(setq doom-theme 'doom-nord)
+(setq doom-theme 'modus-vivendi)
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
 (setq display-line-numbers-type 'relative)
@@ -117,7 +117,8 @@
 ;; change `org-directory'. It must be set before org loads!
 (setq org-directory "~/Sync/org/")
 
-
+;;Agenda
+(setq org-agenda-prefix-format "%t %s")
 ;; Whenever you reconfigure a package, make sure to wrap your config in an
 ;; `after!' block, otherwise Doom's defaults may override your settings. E.g.
 ;;
