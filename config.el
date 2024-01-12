@@ -4,7 +4,7 @@
 ;; sync' after modifying this file!
 (set-frame-parameter (selected-frame)'alpha '(100 . 100))
 (add-to-list 'default-frame-alist'(alpha . (100 . 100)))
-(add-to-list 'default-frame-alist '(inhibit-double-buffering . t))
+;;(add-to-list 'default-frame-alist '(inhibit-double-buffering . t))
 (setq jit-lock-stealth-time 1.25)
 (setq jit-lock-stealth-nice 0.5) ;; Seconds between font locking.
 (setq jit-lock-chunk-size 4096)
@@ -97,7 +97,7 @@
 ;; See 'C-h v doom-font' for documentation and more examples of what they
 ;; accept. For example:
 ;;
-(setq doom-font (font-spec :family "Droid Sans Mono" :size 12 :weight 'Regular))
+(setq doom-font (font-spec :family "Droid Sans Mono" :size 16 :weight 'Regular))
 ;;      doom-variable-pitch-font (font-spec :family "Fira Sans" :size 13))
 ;;
 ;; If you or Emacs can't find your font, use 'M-x describe-font' to look them
@@ -116,7 +116,6 @@
 ;; If you use `org' and don't want your org files in the default location below,
 ;; change `org-directory'. It must be set before org loads!
 (setq org-directory "~/Sync/org/")
-
 ;;Agenda
 (setq org-agenda-prefix-format "%t %s")
 ;; Whenever you reconfigure a package, make sure to wrap your config in an
