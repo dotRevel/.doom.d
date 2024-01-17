@@ -21,7 +21,10 @@
 (after! (doom-packages straight)
   (setq straight--native-comp-available t))
 
-
+(use-package affe
+  :config
+  ;; Manual preview key for `affe-grep'
+  (consult-customize affe-grep :preview-key "M-."))
 ;; Some functionality uses this to identify you, e.g. GPG configuration, email
 ;; clients, file templates and snippets. It is optional.
 ;; (setq user-full-name "John Doe"
@@ -97,7 +100,7 @@
 ;; See 'C-h v doom-font' for documentation and more examples of what they
 ;; accept. For example:
 ;;
-(setq doom-font (font-spec :family "Droid Sans Mono" :size 16 :weight 'Regular))
+(setq doom-font (font-spec :family "Droid Sans Mono" :size 28 :weight 'Regular))
 ;;      doom-variable-pitch-font (font-spec :family "Fira Sans" :size 13))
 ;;
 ;; If you or Emacs can't find your font, use 'M-x describe-font' to look them
@@ -124,7 +127,6 @@
 ;;   (after! PACKAGE
 ;;     (setq x y))
 ;;
-;; The exceptions to this rule:
 ;;
 ;;   - Setting file/directory variables (like `org-directory')
 ;;   - Setting variables which explicitly tell you to set them before their
