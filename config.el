@@ -21,10 +21,6 @@
 (after! (doom-packages straight)
   (setq straight--native-comp-available t))
 
-(use-package affe
-  :config
-  ;; Manual preview key for `affe-grep'
-  (consult-customize affe-grep :preview-key "M-."))
 ;; Some functionality uses this to identify you, e.g. GPG configuration, email
 ;; clients, file templates and snippets. It is optional.
 ;; (setq user-full-name "John Doe"
@@ -40,7 +36,6 @@
  ;;       c-basic-offset 4
 ;;        indent-tabs-mode nil)
 ;; ;
-
 ;;; native compilation
 (setq native-comp-async-jobs-number 5) ; use 5 cores when native compiling
 
