@@ -11,7 +11,7 @@
  '(magit-todos-insert-after '(bottom) nil nil "Changed by setter of obsolete option `magit-todos-insert-at'")
  '(org-agenda-files '("~/Sync/org/Agenda"))
  '(package-selected-packages
-   '(fish-completion obsidian kanagawa-theme solarized-theme minimal-theme @ soothe-theme)))
+   '(naysayer-theme fish-completion obsidian kanagawa-theme solarized-theme minimal-theme @ soothe-theme)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
