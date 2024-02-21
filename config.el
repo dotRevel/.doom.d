@@ -4,7 +4,7 @@
 ;; sync' after modifying this file!
 (set-frame-parameter (selected-frame)'alpha '(100 . 100))
 (add-to-list 'default-frame-alist'(alpha . (100 . 100)))
-;;(add-to-list 'default-frame-alist '(inhibit-double-buffering . t))
+(add-to-list 'default-frame-alist '(inhibit-double-buffering . t))
 (setq jit-lock-stealth-time 1.25)
 (setq jit-lock-stealth-nice 0.5) ;; Seconds between font locking.
 (setq jit-lock-chunk-size 4096)
@@ -36,6 +36,7 @@
  ;;       c-basic-offset 4
 ;;        indent-tabs-mode nil)
 ;; ;
+(add-hook 'eglot-managed-mode-hook (lambda () (eglot-inlay-hints-mode -1)))
 ;;; native compilation
 (setq native-comp-async-jobs-number 5) ; use 5 cores when native compiling
 
@@ -106,7 +107,7 @@
 ;; There are two ways to load a theme. Both assume the theme is installed and
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function. This is the default:
-(setq doom-theme 'modus-vivendi)
+(setq doom-theme 'kanagawa)
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
 (setq display-line-numbers-type 'relative)
