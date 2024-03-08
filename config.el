@@ -32,9 +32,9 @@
  ;;  )
 ; ;; Languages - C/C++
 ;
-;; (setq c-default-style "k&r"
- ;;       c-basic-offset 4
-;;        indent-tabs-mode nil)
+ (setq c-default-style "k&r"
+       c-basic-offset 4
+       indent-tabs-mode nil)
 ;; ;
 (add-hook 'eglot-managed-mode-hook (lambda () (eglot-inlay-hints-mode -1)))
 ;;; native compilation
@@ -114,8 +114,7 @@
 
 ;; If you use `org' and don't want your org files in the default location below,
 ;; change `org-directory'. It must be set before org loads!
-(setq org-directory "~/Sync/org/")
-;;
+(setq org-directory "/mnt/c/Users/SyncthingServiceAcct/Sync")
 ;; org mode emphasis markers
 ;;
 (setq org-hide-emphasis-markers t)
